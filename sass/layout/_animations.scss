@@ -1,0 +1,75 @@
+// --> Animation
+// ============================== 
+
+@keyframes myanim {
+  0%   {
+      top:-2000px;
+      left:-400px;
+      opacity: 0
+  }
+  100% {opacity: 1;}
+
+}
+
+@-webkit-keyframes myanim {
+  0%   {
+      top:-2000px;
+      left:-400px;
+      opacity: 0
+  }
+  100% {opacity: 1;}
+
+}
+
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  
+}
+
+#logo path:nth-child(1) {
+  stroke-dasharray: 41123; 
+  stroke-dashoffset: 41123;
+  animation: line-anim 10s ease forwards;
+}
+
+#logo path:nth-child(2) {
+  stroke-dasharray: 19767; 
+  stroke-dashoffset: 19767;
+  animation: line-anim 5s ease forwards 0.3s;
+}
+
+#logo path:nth-child(3) {
+  stroke-dasharray: 6394; 
+  stroke-dashoffset: 6394;
+  animation: line-anim 5s ease forwards 0.6s;
+}
+
+#logo path:nth-child(4) {
+  stroke-dasharray: 6426; 
+  stroke-dashoffset: 6426;
+  animation: line-anim 5s ease forwards 0.9s;
+}
+
+
+
+@keyframes line-anim {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
+
+@keyframes typingAnim{
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.fa-heart {
+  color: #c94747;
+  -webkit-animation: pulse 1s ease-in-out infinite;
+  animation: pulse 1s ease-in-out infinite;
+}

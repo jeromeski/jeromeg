@@ -1,0 +1,167 @@
+.hero {
+  border-radius: 5px;
+  position: fixed;
+  top: 2.5rem;
+  left: 2.5rem;
+  // min-height: 0;
+  width: calc(100vw - 5rem);
+  background-color: #46738f;
+  background-image: linear-gradient(to bottom right, rgba(#46738f, .90), rgba(#0B2535, .90));
+  min-height: 70vh;
+
+  @media screen and (max-width: 62em) {
+    border-radius: 0;
+    width: 100%;
+    padding: 0;
+    top: 0;
+    left: 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__left {
+    padding-top: 5rem;
+    z-index: 1;
+
+    & .text-zone img {
+      width: 45px;
+    }
+
+    @media screen and (max-width: 368px) {
+      padding-left: 3rem;
+    }
+
+  }
+
+  &__right {
+    padding-top: 2rem;
+
+    @media screen and (max-width: 62em) {
+      position: absolute;
+    }
+    
+  }
+
+  &__right-inner {
+    position: relative;
+    display: flex;
+  }
+
+  &__left .text-zone img {
+    width: 45px;
+  }
+
+  &__left .text-zone a {
+    font-weight: 300;
+  }
+  
+  &__left h1 {
+    color: #fff;
+    font-size: 3.3rem;
+    letter-spacing: 2.5px;
+    line-height: 55px;
+    margin: 0;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.123);
+  }
+  
+  &__left .flat-button {
+
+  }
+  
+  &__left .flat-button svg:hover {
+    fill: #af912e;
+  }
+  
+  &__left .blast {
+    opacity: 0;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  
+  &__left .blast:hover {
+    color: #d8be68;
+  }
+
+  &__buttons {
+    padding-top: 1.5rem;
+  }
+
+  &__buttons > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &__social-icon {
+    height: 2.75rem;
+    width: 2.75rem;
+    fill: #c5a334;
+  }
+
+}
+
+.bg {
+  /* background-color: black; */
+  width: 75%;
+  height: 75%;
+  opacity:0;
+  position: absolute;
+  top:0;
+  // right: 12.5%;
+  bottom: 0;
+  left: 12.5%;
+  margin: auto;
+}
+
+.bg svg {
+  width: 100%;
+  height: auto;
+  bottom: 0;
+}
+
+.hero__right-inner img {
+  z-index: -1;
+  margin: auto;
+  width: 75%;
+  opacity: 0;
+  animation-delay: 2s;
+}
+
+
+
+
+
+
+.typing {
+  color: #d8be68;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: .8rem;
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 2px;
+
+}
+
+.typing > *{
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typingAnim 3.5s steps(50);
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90%;
+  width: 100%;
+  z-index: -1000; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: .05; }
+
