@@ -52,4 +52,8 @@ body {
   text-align: center;
   left: 50%;
   transform: translate(-50%);
+
+  @media screen and (min-width: 768px) {
+    top: -20%;
+  }
 }
