@@ -181,19 +181,12 @@ main {
       left: auto;
       right: 5rem;
     }
-
-    
-  }
-
-  &__portfolio-content {
-
   }
 
   .portfolio__item:first-child .portfolio__item-preview {
     @media screen and (min-width: 992px) {
     border-top-right-radius: 5px;
     }
-
   }
 
   .portfolio__item-preview {
